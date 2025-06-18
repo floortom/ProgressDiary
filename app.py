@@ -1,4 +1,4 @@
-from database import add_entry, get_entries
+from database import create_table, add_entry, get_entries
 
 menu = """
 Please select one of the following options:
@@ -16,10 +16,12 @@ def prompt_new():
     add_entry(entryContent, entryDate)
 
 def view_entries(entries):
-    for entry in get_entries():
-        print(f"{entry["date"]}\n{entry["content"]}\n\n")
+    for entry in entries:
+        print(f"{entry[1]}\n{entry[0]}\n\n")
 
 print(welcome)
+
+create_table()
 
 while (userInput := input(menu)) != "3":
     if userInput == "1":
