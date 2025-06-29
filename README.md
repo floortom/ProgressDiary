@@ -1,4 +1,4 @@
-## 📓 Programming Diary (CLI App)
+## 📓 Progress Diary (CLI App)
 
 This is a simple command-line diary application that allows users to log their daily programming progress, store entries in a database, and retrieve them at any time. It’s a minimalistic productivity tool built in Python with a focus on usability and structured data storage.
 
